@@ -1,0 +1,108 @@
+<! DOCTYPE html>
+<HTML을>
+<머리>
+	<!-- 글꼴 굉장함 -->
+	<링크 rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- Google 글꼴 -->
+	<링크 rel="사전 연결" href="https://fonts.googleapis.com">
+	<링크 rel = "사전 연결"href = "https://fonts.gstatic.com"교차 출처>
+	<링크 href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="스타일시트">
+	<!-------->
+	<스타일>
+		* {
+			여백: 0;
+			패딩: 0;
+			-webkit-box-sizing : 테두리 상자;
+			상자 크기 조정 : 테두리 상자;
+		}
+ . nav메뉴 {
+			font-family: 'Advent Pro', 산세리프체;
+			패딩: 8px;
+			텍스트 정렬 : 센터;
+			여백: 7px 자동;
+			너비 : 적합 내용;
+		}
+ . nav메뉴 a {
+			색상: #272727;
+			텍스트 장식 : 없음;
+			텍스트 변환 : 대문자;
+			디스플레이 : 인라인 블록;
+			패딩: 6px;
+		}
+ . 배경 {
+			배경색: #ece5f0;
+		}
+ . 국경 {
+			테두리 : 1px 솔리드 #cccccc;
+		}
+ . navMenu a:가리키기 {
+			색상: #D09C0B;
+		}
+	</스타일>
+</머리>
+<몸>
+	<nav 클래스 = "navMenu 테두리">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> 홈</a>
+		<a id="받은 편지함" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> 받은 편지함</a>
+		< a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> 플래너</a>
+		< a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> 프로젝트</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> 작업</a>
+		< a id="비즈니스" onclick="탐색(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> 비즈니스</a>
+		< a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> 지식</a>
+		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> 주제</a>
+		< a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> 메모</a>
+		< a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
+		< a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
+		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a >
+	</탐색>
+	<각본>
+		let 방향 = "수평";
+		if (방향 === "수직") {
+			문서.머리.insertAdjacentHTML("beforeend", '<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>')
+		}
+		function navigate(id) {
+
+			 if (id == 'home')
+				window.open("https://www.notion.so/Home-743cb734ac4c41ee90896e039f0dd917", '_blank').focus();
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "inbox")
+				창.open("https:// www.notion.so/Inbox-91a8ce98118147d384c511c67833bb6d", '_blank')입니다.초점();
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "week")
+				window.open("https://www.notion.so/shorouk/This-Week-bd3171730a4c4a9097399770acde9882", '_blank').focus();
+				창.open("https:// example.com", '_blank')입니다.초점();
+			else if (id == "월")
+				창.open("https:// www.notion.so/shorouk/This-Month-c18ee8ef9c754f088670caa55df0b0e0", '_blank')입니다.초점();
+				창.open("https:// example.com", '_blank')입니다.초점();
+			그렇지 않으면 (id == "projects")
+				창.open("https:// www.notion.so/Projects-e6745abbeaf0418aab7b9f6c57f3aba0", '_blank')입니다.초점();
+				창.open("https:// example.com", '_blank')입니다.초점();
+			else if (id == "business")
+				창.open("https:// www.notion.so/shorouk/Business-Dashboard-75f3e1cb7d0a4895929ec5feed780e55", '_blank')입니다.초점();
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "작업")
+				window.open("https://www.notion.so/Task-Manager-48ea6f04eaf24aa0889a5b5de34ea415", '_blank').focus();
+				창.open("https:// example.com", '_blank')입니다.초점();
+			else if (id == "지식")
+				창.open("https:// www.notion.so/My-Knowledge-Base-7b003813544d478b9f61d813cfaefae5", '_blank')입니다.초점();
+				창.open("https:// example.com", '_blank')입니다.초점();
+			else if (id == "주제")
+				창.open("https:// www.notion.so/Topics-Browser-bb6d50722de74a0e8cc2e678e76b0a44", '_blank')입니다.초점();
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://www.notion.so/The-Notebook-6939d2ac0fa84089a3c83ca657c9cdfb", '_blank').focus();
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "미디어")
+				창.open("https:// www.notion.so/Multimedia-Library-74c4d2eea2fc4f25b3fdebaaea4de2c3", '_blank')입니다.초점();
+				창.open("https:// example.com", '_blank')입니다.초점();
+			else if (id == "resourses")
+				창.open("https:// www.notion.so/Resources-Library-766dde1a6f1e4a3499b9d65a8013e5e3", '_blank')입니다.초점();
+				창.open("https:// example.com3", '_blank')입니다.초점();
+			else if (id == "lifewiki")
+				창.open("https:// www.notion.so/My-Life-wiki-51e257c76f984c2cb58858573a101989", '_blank')입니다.초점();
+				창.open("https:// example.com", '_blank')입니다.초점();
+
+		}
+	</각본>
+</몸>
+</HTML을>
